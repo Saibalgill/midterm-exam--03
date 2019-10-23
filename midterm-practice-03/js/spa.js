@@ -1,24 +1,24 @@
-var app = angular.module('customersApp',['ngRoute']);
+var app = angular.module('midtermApp',['ngRoute']);
   app.config(function($routeProvider) {
     $routeProvider.when('/',
       {
         controller:'CustomersController',
-        templateUrl: 'app/views/main.html'
+        templateUrl: 'app/views/home.html'
       })
-    .when('/book',
+    .when('/works',
       {
         controller: 'BookController',
-        templateUrl: 'app/views/book.html'
+        templateUrl: 'app/views/works.html'
       })
-      .when('/menu',
+      .when('/news',
         {
           controller: 'MenuController',
-          templateUrl: 'app/views/menu.html'
+          templateUrl: 'app/views/news.html'
         })
-     .when('/flight_status',
+     .when('/contact',
         {
           controller: 'FlightStatusController',
-          templateUrl: 'app/views/flight_status.html'
+          templateUrl: 'app/views/contact.html'
         })
         .when('/etfinals',
            {
